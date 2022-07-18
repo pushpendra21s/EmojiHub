@@ -1,0 +1,1033 @@
+[{
+    "name": "grinning face",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128512;"],
+    "unicode": ["U+1F600"]
+}, {
+    "name": "grinning face with smiling eyes",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128513;"],
+    "unicode": ["U+1F601"]
+}, {
+    "name": "face with tears of joy",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128514;"],
+    "unicode": ["U+1F602"]
+}, {
+    "name": "rolling on the floor laughing",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#129315;"],
+    "unicode": ["U+1F923"]
+}, {
+    "name": "smiling face with open mouth",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128515;"],
+    "unicode": ["U+1F603"]
+}, {
+    "name": "smiling face with open mouth and smiling eyes ≊ smiling face with open mouth ",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128516;"],
+    "unicode": ["U+1F604"]
+}, {
+    "name": "smiling face with open mouth and cold sweat ≊ smiling face with open mouth ",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128517;"],
+    "unicode": ["U+1F605"]
+}, {
+    "name": "smiling face with open mouth and tightly-closed eyes ≊ smiling face with open mouth ",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128518;"],
+    "unicode": ["U+1F606"]
+}, {
+    "name": "winking face",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128521;"],
+    "unicode": ["U+1F609"]
+}, {
+    "name": "smiling face with smiling eyes",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128522;"],
+    "unicode": ["U+1F60A"]
+}, {
+    "name": "face savouring delicious food",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128523;"],
+    "unicode": ["U+1F60B"]
+}, {
+    "name": "smiling face with sunglasses",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128526;"],
+    "unicode": ["U+1F60E"]
+}, {
+    "name": "smiling face with heart-shaped eyes ≊ smiling face with heart-eyes",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128525;"],
+    "unicode": ["U+1F60D"]
+}, {
+    "name": "face throwing a kiss",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128536;"],
+    "unicode": ["U+1F618"]
+}, {
+    "name": "kissing face",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128535;"],
+    "unicode": ["U+1F617"]
+}, {
+    "name": "kissing face with smiling eyes",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128537;"],
+    "unicode": ["U+1F619"]
+}, {
+    "name": "kissing face with closed eyes",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128538;"],
+    "unicode": ["U+1F61A"]
+}, {
+    "name": "white smiling face ≊ smiling face",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#9786;"],
+    "unicode": ["U+263A"]
+}, {
+    "name": "slightly smiling face",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#128578;"],
+    "unicode": ["U+1F642"]
+}, {
+    "name": "hugging face",
+    "category": "smileys and people",
+    "group": "face positive",
+    "htmlCode": ["&#129303;"],
+    "unicode": ["U+1F917"]
+}, {
+    "name": "thinking face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#129300;"],
+    "unicode": ["U+1F914"]
+}, {
+    "name": "neutral face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128528;"],
+    "unicode": ["U+1F610"]
+}, {
+    "name": "expressionless face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128529;"],
+    "unicode": ["U+1F611"]
+}, {
+    "name": "face without mouth",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128566;"],
+    "unicode": ["U+1F636"]
+}, {
+    "name": "face with rolling eyes",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128580;"],
+    "unicode": ["U+1F644"]
+}, {
+    "name": "smirking face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128527;"],
+    "unicode": ["U+1F60F"]
+}, {
+    "name": "persevering face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128547;"],
+    "unicode": ["U+1F623"]
+}, {
+    "name": "disappointed but relieved face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128549;"],
+    "unicode": ["U+1F625"]
+}, {
+    "name": "face with open mouth",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128558;"],
+    "unicode": ["U+1F62E"]
+}, {
+    "name": "zipper-mouth face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#129296;"],
+    "unicode": ["U+1F910"]
+}, {
+    "name": "hushed face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128559;"],
+    "unicode": ["U+1F62F"]
+}, {
+    "name": "sleepy face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128554;"],
+    "unicode": ["U+1F62A"]
+}, {
+    "name": "tired face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128555;"],
+    "unicode": ["U+1F62B"]
+}, {
+    "name": "sleeping face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128564;"],
+    "unicode": ["U+1F634"]
+}, {
+    "name": "relieved face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128524;"],
+    "unicode": ["U+1F60C"]
+}, {
+    "name": "nerd face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#129299;"],
+    "unicode": ["U+1F913"]
+}, {
+    "name": "face with stuck-out tongue",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128539;"],
+    "unicode": ["U+1F61B"]
+}, {
+    "name": "face with stuck-out tongue and winking eye ≊ face with stuck-out tongue ",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128540;"],
+    "unicode": ["U+1F61C"]
+}, {
+    "name": "face with stuck-out tongue and tightly-closed eyes ≊ face with stuck-out tongue ",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128541;"],
+    "unicode": ["U+1F61D"]
+}, {
+    "name": "drooling face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#129316;"],
+    "unicode": ["U+1F924"]
+}, {
+    "name": "unamused face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128530;"],
+    "unicode": ["U+1F612"]
+}, {
+    "name": "face with cold sweat",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128531;"],
+    "unicode": ["U+1F613"]
+}, {
+    "name": "pensive face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128532;"],
+    "unicode": ["U+1F614"]
+}, {
+    "name": "confused face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128533;"],
+    "unicode": ["U+1F615"]
+}, {
+    "name": "upside-down face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128579;"],
+    "unicode": ["U+1F643"]
+}, {
+    "name": "money-mouth face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#129297;"],
+    "unicode": ["U+1F911"]
+}, {
+    "name": "astonished face",
+    "category": "smileys and people",
+    "group": "face neutral",
+    "htmlCode": ["&#128562;"],
+    "unicode": ["U+1F632"]
+}, {
+    "name": "white frowning face ≊ frowning face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#9785;"],
+    "unicode": ["U+2639"]
+}, {
+    "name": "slightly frowning face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128577;"],
+    "unicode": ["U+1F641"]
+}, {
+    "name": "confounded face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128534;"],
+    "unicode": ["U+1F616"]
+}, {
+    "name": "disappointed face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128542;"],
+    "unicode": ["U+1F61E"]
+}, {
+    "name": "worried face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128543;"],
+    "unicode": ["U+1F61F"]
+}, {
+    "name": "face with look of triumph ≊ face with steam from nose",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128548;"],
+    "unicode": ["U+1F624"]
+}, {
+    "name": "crying face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128546;"],
+    "unicode": ["U+1F622"]
+}, {
+    "name": "loudly crying face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128557;"],
+    "unicode": ["U+1F62D"]
+}, {
+    "name": "frowning face with open mouth",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128550;"],
+    "unicode": ["U+1F626"]
+}, {
+    "name": "anguished face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128551;"],
+    "unicode": ["U+1F627"]
+}, {
+    "name": "fearful face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128552;"],
+    "unicode": ["U+1F628"]
+}, {
+    "name": "weary face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128553;"],
+    "unicode": ["U+1F629"]
+}, {
+    "name": "grimacing face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128556;"],
+    "unicode": ["U+1F62C"]
+}, {
+    "name": "face with open mouth and cold sweat ≊ face with open mouth ",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128560;"],
+    "unicode": ["U+1F630"]
+}, {
+    "name": "face screaming in fear",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128561;"],
+    "unicode": ["U+1F631"]
+}, {
+    "name": "flushed face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128563;"],
+    "unicode": ["U+1F633"]
+}, {
+    "name": "dizzy face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128565;"],
+    "unicode": ["U+1F635"]
+}, {
+    "name": "pouting face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128545;"],
+    "unicode": ["U+1F621"]
+}, {
+    "name": "angry face",
+    "category": "smileys and people",
+    "group": "face negative",
+    "htmlCode": ["&#128544;"],
+    "unicode": ["U+1F620"]
+}, {
+    "name": "smiling face with halo",
+    "category": "smileys and people",
+    "group": "face role",
+    "htmlCode": ["&#128519;"],
+    "unicode": ["U+1F607"]
+}, {
+    "name": "face with cowboy hat ≊ cowboy hat face",
+    "category": "smileys and people",
+    "group": "face role",
+    "htmlCode": ["&#129312;"],
+    "unicode": ["U+1F920"]
+}, {
+    "name": "clown face",
+    "category": "smileys and people",
+    "group": "face role",
+    "htmlCode": ["&#129313;"],
+    "unicode": ["U+1F921"]
+}, {
+    "name": "lying face",
+    "category": "smileys and people",
+    "group": "face role",
+    "htmlCode": ["&#129317;"],
+    "unicode": ["U+1F925"]
+}, {
+    "name": "face with medical mask",
+    "category": "smileys and people",
+    "group": "face sick",
+    "htmlCode": ["&#128567;"],
+    "unicode": ["U+1F637"]
+}, {
+    "name": "face with thermometer",
+    "category": "smileys and people",
+    "group": "face sick",
+    "htmlCode": ["&#129298;"],
+    "unicode": ["U+1F912"]
+}, {
+    "name": "face with head-bandage",
+    "category": "smileys and people",
+    "group": "face sick",
+    "htmlCode": ["&#129301;"],
+    "unicode": ["U+1F915"]
+}, {
+    "name": "nauseated face",
+    "category": "smileys and people",
+    "group": "face sick",
+    "htmlCode": ["&#129314;"],
+    "unicode": ["U+1F922"]
+}, {
+    "name": "sneezing face",
+    "category": "smileys and people",
+    "group": "face sick",
+    "htmlCode": ["&#129319;"],
+    "unicode": ["U+1F927"]
+}, {
+    "name": "smiling face with horns",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128520;"],
+    "unicode": ["U+1F608"]
+}, {
+    "name": "imp",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128127;"],
+    "unicode": ["U+1F47F"]
+}, {
+    "name": "japanese ogre ≊ ogre",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128121;"],
+    "unicode": ["U+1F479"]
+}, {
+    "name": "japanese goblin ≊ goblin",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128122;"],
+    "unicode": ["U+1F47A"]
+}, {
+    "name": "skull",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128128;"],
+    "unicode": ["U+1F480"]
+}, {
+    "name": "skull and crossbones",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#9760;"],
+    "unicode": ["U+2620"]
+}, {
+    "name": "ghost",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128123;"],
+    "unicode": ["U+1F47B"]
+}, {
+    "name": "extraterrestrial alien ≊ alien",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128125;"],
+    "unicode": ["U+1F47D"]
+}, {
+    "name": "alien monster",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128126;"],
+    "unicode": ["U+1F47E"]
+}, {
+    "name": "robot face",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#129302;"],
+    "unicode": ["U+1F916"]
+}, {
+    "name": "pile of poo",
+    "category": "smileys and people",
+    "group": "creature face",
+    "htmlCode": ["&#128169;"],
+    "unicode": ["U+1F4A9"]
+}, {
+    "name": "smiling cat face with open mouth",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128570;"],
+    "unicode": ["U+1F63A"]
+}, {
+    "name": "grinning cat face with smiling eyes",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128568;"],
+    "unicode": ["U+1F638"]
+}, {
+    "name": "cat face with tears of joy",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128569;"],
+    "unicode": ["U+1F639"]
+}, {
+    "name": "smiling cat face with heart-shaped eyes ≊ smiling cat face with heart-eyes",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128571;"],
+    "unicode": ["U+1F63B"]
+}, {
+    "name": "cat face with wry smile",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128572;"],
+    "unicode": ["U+1F63C"]
+}, {
+    "name": "kissing cat face with closed eyes",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128573;"],
+    "unicode": ["U+1F63D"]
+}, {
+    "name": "weary cat face",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128576;"],
+    "unicode": ["U+1F640"]
+}, {
+    "name": "crying cat face",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128575;"],
+    "unicode": ["U+1F63F"]
+}, {
+    "name": "pouting cat face",
+    "category": "smileys and people",
+    "group": "cat face",
+    "htmlCode": ["&#128574;"],
+    "unicode": ["U+1F63E"]
+}, {
+    "name": "see-no-evil monkey ≊ see-no-evil",
+    "category": "smileys and people",
+    "group": "monkey face",
+    "htmlCode": ["&#128584;"],
+    "unicode": ["U+1F648"]
+}, {
+    "name": "hear-no-evil monkey ≊ hear-no-evil",
+    "category": "smileys and people",
+    "group": "monkey face",
+    "htmlCode": ["&#128585;"],
+    "unicode": ["U+1F649"]
+}, {
+    "name": "speak-no-evil monkey ≊ speak-no-evil",
+    "category": "smileys and people",
+    "group": "monkey face",
+    "htmlCode": ["&#128586;"],
+    "unicode": ["U+1F64A"]
+}, {
+    "name": "boy",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128102;"],
+    "unicode": ["U+1F466"]
+}, {
+    "name": "boy, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128102;", "&#127995;"],
+    "unicode": ["U+1F466", "U+1F3FB"]
+}, {
+    "name": "boy, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128102;", "&#127996;"],
+    "unicode": ["U+1F466", "U+1F3FC"]
+}, {
+    "name": "boy, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128102;", "&#127997;"],
+    "unicode": ["U+1F466", "U+1F3FD"]
+}, {
+    "name": "boy, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128102;", "&#127998;"],
+    "unicode": ["U+1F466", "U+1F3FE"]
+}, {
+    "name": "boy, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128102;", "&#127999;"],
+    "unicode": ["U+1F466", "U+1F3FF"]
+}, {
+    "name": "girl",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128103;"],
+    "unicode": ["U+1F467"]
+}, {
+    "name": "girl, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128103;", "&#127995;"],
+    "unicode": ["U+1F467", "U+1F3FB"]
+}, {
+    "name": "girl, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128103;", "&#127996;"],
+    "unicode": ["U+1F467", "U+1F3FC"]
+}, {
+    "name": "girl, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128103;", "&#127997;"],
+    "unicode": ["U+1F467", "U+1F3FD"]
+}, {
+    "name": "girl, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128103;", "&#127998;"],
+    "unicode": ["U+1F467", "U+1F3FE"]
+}, {
+    "name": "girl, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128103;", "&#127999;"],
+    "unicode": ["U+1F467", "U+1F3FF"]
+}, {
+    "name": "man",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128104;"],
+    "unicode": ["U+1F468"]
+}, {
+    "name": "man, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128104;", "&#127995;"],
+    "unicode": ["U+1F468", "U+1F3FB"]
+}, {
+    "name": "man, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128104;", "&#127996;"],
+    "unicode": ["U+1F468", "U+1F3FC"]
+}, {
+    "name": "man, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128104;", "&#127997;"],
+    "unicode": ["U+1F468", "U+1F3FD"]
+}, {
+    "name": "man, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128104;", "&#127998;"],
+    "unicode": ["U+1F468", "U+1F3FE"]
+}, {
+    "name": "man, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128104;", "&#127999;"],
+    "unicode": ["U+1F468", "U+1F3FF"]
+}, {
+    "name": "woman",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128105;"],
+    "unicode": ["U+1F469"]
+}, {
+    "name": "woman, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128105;", "&#127995;"],
+    "unicode": ["U+1F469", "U+1F3FB"]
+}, {
+    "name": "woman, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128105;", "&#127996;"],
+    "unicode": ["U+1F469", "U+1F3FC"]
+}, {
+    "name": "woman, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128105;", "&#127997;"],
+    "unicode": ["U+1F469", "U+1F3FD"]
+}, {
+    "name": "woman, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128105;", "&#127998;"],
+    "unicode": ["U+1F469", "U+1F3FE"]
+}, {
+    "name": "woman, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128105;", "&#127999;"],
+    "unicode": ["U+1F469", "U+1F3FF"]
+}, {
+    "name": "older man ≊ old man",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128116;"],
+    "unicode": ["U+1F474"]
+}, {
+    "name": "old man, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128116;", "&#127995;"],
+    "unicode": ["U+1F474", "U+1F3FB"]
+}, {
+    "name": "old man, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128116;", "&#127996;"],
+    "unicode": ["U+1F474", "U+1F3FC"]
+}, {
+    "name": "old man, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128116;", "&#127997;"],
+    "unicode": ["U+1F474", "U+1F3FD"]
+}, {
+    "name": "old man, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128116;", "&#127998;"],
+    "unicode": ["U+1F474", "U+1F3FE"]
+}, {
+    "name": "old man, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128116;", "&#127999;"],
+    "unicode": ["U+1F474", "U+1F3FF"]
+}, {
+    "name": "older woman ≊ old woman",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128117;"],
+    "unicode": ["U+1F475"]
+}, {
+    "name": "old woman, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128117;", "&#127995;"],
+    "unicode": ["U+1F475", "U+1F3FB"]
+}, {
+    "name": "old woman, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128117;", "&#127996;"],
+    "unicode": ["U+1F475", "U+1F3FC"]
+}, {
+    "name": "old woman, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128117;", "&#127997;"],
+    "unicode": ["U+1F475", "U+1F3FD"]
+}, {
+    "name": "old woman, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128117;", "&#127998;"],
+    "unicode": ["U+1F475", "U+1F3FE"]
+}, {
+    "name": "old woman, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128117;", "&#127999;"],
+    "unicode": ["U+1F475", "U+1F3FF"]
+}, {
+    "name": "baby",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128118;"],
+    "unicode": ["U+1F476"]
+}, {
+    "name": "baby, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128118;", "&#127995;"],
+    "unicode": ["U+1F476", "U+1F3FB"]
+}, {
+    "name": "baby, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128118;", "&#127996;"],
+    "unicode": ["U+1F476", "U+1F3FC"]
+}, {
+    "name": "baby, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128118;", "&#127997;"],
+    "unicode": ["U+1F476", "U+1F3FD"]
+}, {
+    "name": "baby, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128118;", "&#127998;"],
+    "unicode": ["U+1F476", "U+1F3FE"]
+}, {
+    "name": "baby, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128118;", "&#127999;"],
+    "unicode": ["U+1F476", "U+1F3FF"]
+}, {
+    "name": "baby angel",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128124;"],
+    "unicode": ["U+1F47C"]
+}, {
+    "name": "baby angel, type-1-2",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128124;", "&#127995;"],
+    "unicode": ["U+1F47C", "U+1F3FB"]
+}, {
+    "name": "baby angel, type-3",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128124;", "&#127996;"],
+    "unicode": ["U+1F47C", "U+1F3FC"]
+}, {
+    "name": "baby angel, type-4",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128124;", "&#127997;"],
+    "unicode": ["U+1F47C", "U+1F3FD"]
+}, {
+    "name": "baby angel, type-5",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128124;", "&#127998;"],
+    "unicode": ["U+1F47C", "U+1F3FE"]
+}, {
+    "name": "baby angel, type-6",
+    "category": "smileys and people",
+    "group": "person",
+    "htmlCode": ["&#128124;", "&#127999;"],
+    "unicode": ["U+1F47C", "U+1F3FF"]
+}, {
+    "name": "police officer",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128110;"],
+    "unicode": ["U+1F46E"]
+}, {
+    "name": "police officer, type-1-2",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128110;", "&#127995;"],
+    "unicode": ["U+1F46E", "U+1F3FB"]
+}, {
+    "name": "police officer, type-3",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128110;", "&#127996;"],
+    "unicode": ["U+1F46E", "U+1F3FC"]
+}, {
+    "name": "police officer, type-4",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128110;", "&#127997;"],
+    "unicode": ["U+1F46E", "U+1F3FD"]
+}, {
+    "name": "police officer, type-5",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128110;", "&#127998;"],
+    "unicode": ["U+1F46E", "U+1F3FE"]
+}, {
+    "name": "police officer, type-6",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128110;", "&#127999;"],
+    "unicode": ["U+1F46E", "U+1F3FF"]
+}, {
+    "name": "sleuth or spy ≊ detective",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128373;"],
+    "unicode": ["U+1F575"]
+}, {
+    "name": "detective, type-1-2",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128373;", "&#127995;"],
+    "unicode": ["U+1F575", "U+1F3FB"]
+}, {
+    "name": "detective, type-3",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128373;", "&#127996;"],
+    "unicode": ["U+1F575", "U+1F3FC"]
+}, {
+    "name": "detective, type-4",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128373;", "&#127997;"],
+    "unicode": ["U+1F575", "U+1F3FD"]
+}, {
+    "name": "detective, type-5",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128373;", "&#127998;"],
+    "unicode": ["U+1F575", "U+1F3FE"]
+}, {
+    "name": "detective, type-6",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128373;", "&#127999;"],
+    "unicode": ["U+1F575", "U+1F3FF"]
+}, {
+    "name": "guardsman",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128130;"],
+    "unicode": ["U+1F482"]
+}, {
+    "name": "guardsman, type-1-2",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128130;", "&#127995;"],
+    "unicode": ["U+1F482", "U+1F3FB"]
+}, {
+    "name": "guardsman, type-3",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128130;", "&#127996;"],
+    "unicode": ["U+1F482", "U+1F3FC"]
+}, {
+    "name": "guardsman, type-4",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128130;", "&#127997;"],
+    "unicode": ["U+1F482", "U+1F3FD"]
+}, {
+    "name": "guardsman, type-5",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128130;", "&#127998;"],
+    "unicode": ["U+1F482", "U+1F3FE"]
+}, {
+    "name": "guardsman, type-6",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128130;", "&#127999;"],
+    "unicode": ["U+1F482", "U+1F3FF"]
+}, {
+    "name": "construction worker",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128119;"],
+    "unicode": ["U+1F477"]
+}, {
+    "name": "construction worker, type-1-2",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128119;", "&#127995;"],
+    "unicode": ["U+1F477", "U+1F3FB"]
+}, {
+    "name": "construction worker, type-3",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128119;", "&#127996;"],
+    "unicode": ["U+1F477", "U+1F3FC"]
+}, {
+    "name": "construction worker, type-4",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128119;", "&#127997;"],
+    "unicode": ["U+1F477", "U+1F3FD"]
+}, {
+    "name": "construction worker, type-5",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128119;", "&#127998;"],
+    "unicode": ["U+1F477", "U+1F3FE"]
+}, {
+    "name": "construction worker, type-6",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128119;", "&#127999;"],
+    "unicode": ["U+1F477", "U+1F3FF"]
+}, {
+    "name": "man with turban ≊ person with turban",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128115;"],
+    "unicode": ["U+1F473"]
+}, {
+    "name": "person with turban, type-1-2",
+    "category": "smileys and people",
+    "group": "person role",
+    "htmlCode": ["&#128115;", "&#127995;"],
+    "unicode": ["U+1F473", "U+1F3FB"]
+}]
