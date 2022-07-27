@@ -19,6 +19,13 @@ protocol EmojiServiceProtocol {
  To get random Emoji            ----    https://emojihub.herokuapp.com/api/random
  */
 
+struct EMOJI_STUB_ENDPOINT_FILE_NAME {
+    static let allEmojis_NoData             = "all_NoData"
+    static let allEmojis_InvalidJson        = "all_InvalidJson"
+    static let randomEmoji_NoData           = "random_NoData"
+    static let randomEmoji_InvalidJson      = "random_InvalidJson"
+}
+
 struct EMOJI_ENDPOINT {
     static let All_EMOJIS                   = "/all"
     static let RANDOM_EMOJI                 = "/random"
@@ -26,19 +33,19 @@ struct EMOJI_ENDPOINT {
 
 final class EmojiServiceProvider: ResponseHandler, EmojiServiceProtocol {
     
-    let networkClient:NetworkClient
+    private let networkClient:NetworkClient
     
     init(withNetworkClient networkC: NetworkClient = NetworkClient()) {
         self.networkClient = networkC
     }
-
+    
     func fetchAllEmojis(allEmojiEndPoint endPoint:String = EMOJI_ENDPOINT.All_EMOJIS, requestCompletion: @escaping (_ object:[Emoji]?,_ error: String?)->()) {
         
         guard let url = self.networkClient.validURL(urlEndPoint: endPoint) else {
             requestCompletion(nil,ErrorResponse.invalidUrl.rawValue)
             return
         }
-
+        
         let request = URLRequest(url: url)
         self.networkClient.loadRequest(request) { data, response, error in
             guard let httpResponse = response as? HTTPURLResponse else {
@@ -116,11 +123,11 @@ class MockEmojiServiceProvider: EmojiServiceProtocol {
     
     var completeClosure_EmojiList: (([Emoji]?, String?) -> ())?
     var completeClosure_RandomEmoji: ((Emoji?, String?) -> ())?
-
+    
     init(withStubClient stubC: StubDataGenerator = StubDataGenerator()) {
         self.stubClient = stubC
     }
-
+    
     func fetchAllEmojis(allEmojiEndPoint endPoint:String = EMOJI_ENDPOINT.All_EMOJIS, requestCompletion: @escaping ([Emoji]?, String?) -> ()) {
         completeClosure_EmojiList = requestCompletion
     }
@@ -146,7 +153,7 @@ class MockEmojiServiceProvider: EmojiServiceProtocol {
             errorString = ErrorResponse.invalidJson.rawValue
         }
     }
-
+    
     func givenFailure_EmojiList_InvalidResponseFromMockJson() {
         do {
             listOfStubEmojis = try stubClient.stubEmojis_AllEmojis_InvalidJson()
@@ -154,7 +161,7 @@ class MockEmojiServiceProvider: EmojiServiceProtocol {
             errorString = ErrorResponse.invalidJson.rawValue
         }
     }
-
+    
     func givenSuccess_RandomEmojiData() {
         do {
             randomStubEmoji = try stubClient.stubRandomEmoji()
@@ -170,7 +177,7 @@ class MockEmojiServiceProvider: EmojiServiceProtocol {
             errorString = ErrorResponse.invalidJson.rawValue
         }
     }
-
+    
     func givenFailure_RandomEmoji_InvalidResponseFromMockJson() {
         do {
             randomStubEmoji = try stubClient.stubEmojis_RandomEmoji_InvalidJson()
@@ -178,11 +185,11 @@ class MockEmojiServiceProvider: EmojiServiceProtocol {
             errorString = ErrorResponse.invalidJson.rawValue
         }
     }
-
-
+    
+    
     
     // MARK: - Mock success/ failure fetch methods
-
+    
     func completeEmojiList_Closure() {
         completeClosure_EmojiList?(listOfStubEmojis, errorString)
     }
@@ -215,7 +222,7 @@ class StubDataGenerator {
             let decoder = JSONDecoder()
             let emojis = try! decoder.decode([Emoji].self, from: mockFileData)
             return emojis
-
+            
         } catch {
             // Exception generated while fetching data from json files
             throw(error)
@@ -229,7 +236,7 @@ class StubDataGenerator {
             let decoder = JSONDecoder()
             let emoji = try decoder.decode(Emoji.self, from: mockFileData)
             return emoji
-
+            
         } catch {
             // Exception generated while fetching data from json files
             throw(error)
@@ -237,62 +244,60 @@ class StubDataGenerator {
     }
     
     //MARK:-  Stubs Generators for Failure scenario
-
+    
     func stubEmojis_AllEmojis_NoData() throws -> [Emoji]? {
         do {
-            let endpoint = "all_NoData"
+            let endpoint = EMOJI_STUB_ENDPOINT_FILE_NAME.allEmojis_NoData
             let mockFileData = try dataFromFile(fileEndPoint: endpoint)
             let decoder = JSONDecoder()
             let emojis = try decoder.decode([Emoji].self, from: mockFileData)
             return emojis
-
+            
         } catch {
             // Exception generated while fetching data from json files
             throw(error)
         }
     }
-
+    
     func stubEmojis_AllEmojis_InvalidJson() throws -> [Emoji]? {
         do {
-            let endpoint = "all_InvalidJson"
+            let endpoint = EMOJI_STUB_ENDPOINT_FILE_NAME.allEmojis_InvalidJson
             let mockFileData = try dataFromFile(fileEndPoint: endpoint)
             let decoder = JSONDecoder()
             let emojis = try decoder.decode([Emoji].self, from: mockFileData)
             return emojis
-
+            
         } catch {
             // Exception generated while fetching data from json files
             throw(error)
         }
     }
-
+    
     func stubEmojis_RandomEmoji_NoData() throws -> Emoji? {
         do {
-            let endpoint = "random_NoData"
+            let endpoint = EMOJI_STUB_ENDPOINT_FILE_NAME.randomEmoji_NoData
             let mockFileData = try dataFromFile(fileEndPoint: endpoint)
             let decoder = JSONDecoder()
             let emoji = try decoder.decode(Emoji.self, from: mockFileData)
             return emoji
-
+            
         } catch {
             // Exception generated while fetching data from json files
             throw(error)
         }
     }
-
+    
     func stubEmojis_RandomEmoji_InvalidJson() throws -> Emoji? {
         do {
-            let endpoint = "random_InvalidJson"
+            let endpoint = EMOJI_STUB_ENDPOINT_FILE_NAME.randomEmoji_InvalidJson
             let mockFileData = try dataFromFile(fileEndPoint: endpoint)
             let decoder = JSONDecoder()
             let emoji = try decoder.decode(Emoji.self, from: mockFileData)
             return emoji
-
+            
         } catch {
             // Exception generated while fetching data from json files
             throw(error)
         }
     }
-
-
 }

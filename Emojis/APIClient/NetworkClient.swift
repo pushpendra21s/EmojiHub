@@ -18,7 +18,7 @@ protocol NetworkRouter: AnyObject {
 internal final class NetworkClient: NetworkRouter {
     
     private var task: URLSessionTask?
-
+    
     func validURL(urlEndPoint: String) -> URL? {
         let urlString = EMOJI_URL.EMOJI_HUB_URL + urlEndPoint
         EmojiUtility.EH_Log("API URL --- \(urlString) " as AnyObject)
@@ -32,13 +32,13 @@ internal final class NetworkClient: NetworkRouter {
         let session = URLSession.shared
         task = session.dataTask(with: request, completionHandler: { (data, response, error) in
             DispatchQueue.main.async {
-
+                
                 EmojiUtility.EH_Log("API URL --- \(String(describing: request.url?.absoluteString))" as AnyObject)
                 if let resp = response as? HTTPURLResponse {
                     let statusCode = "\(resp.statusCode)"
                     EmojiUtility.EH_Log("API RESPONSE CODE--- \(statusCode)" as AnyObject)
                 }
-
+                
                 if let err = error {
                     EmojiUtility.EH_Log("API ERROR--- \(err.localizedDescription)" as AnyObject)
                 }

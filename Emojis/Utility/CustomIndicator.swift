@@ -9,14 +9,12 @@ import UIKit
 
 @IBDesignable
 class CustomIndicator: UIActivityIndicatorView {
-
+    
     // MARK: - Inspectable Properties
     // MARK: - 
-    @IBInspectable var indicatorColor: UIColor = THEME_COMMON_COLOR.COLOR_MAIN {
+    @IBInspectable var indicatorColor: UIColor = Theme_Common_Color.main {
         didSet {
-            self.color = THEME_COMMON_COLOR.COLOR_MAIN//indicatorColor
+            self.color = Theme_Common_Color.main
         }
-    }
-    
-
+    }    
 }

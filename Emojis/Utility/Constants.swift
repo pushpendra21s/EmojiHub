@@ -8,40 +8,54 @@
 import Foundation
 
 
-struct APP_STORYBOARDS
+struct App_Stroyboards
 {
-    static let MAIN_STORYBOARD                  = "Main"
+    static let main_storyboard                  = "Main"
 }
 
-struct ALERT_MESSAGES
+struct Alert_Messages
 {
-    enum TITLE:String {
-        case ERROR                              = "Error occurred"
-        case ERROR_NO_RECORDS                   = "No records found"
-        case NO_INTERNET_CONNECTION             = "No internet"
+    enum Title:String {
+        case error                              = "Error occurred"
+        case errorNoRecords                     = "No records found"
+        case errorNoInternet                    = "No internet"
     }
-
-    enum STRING_VALUES:String {
+    
+    enum String_Values:String {
         //MESSAGES
-        case FAILURE_MESSAGE                    = "Please try again later."
-        case SERVER_TIMEOUT                     = "Server timed out"
-        case INVALID_JSON                       = "Invalid response."
-        case NO_DATA_FROM_SERVER                = "No data found"
-        case NO_INTERNET_CONNECTION             = "Please make sure to connect with internet."
+        case failureMessage                     = "Please try again later."
+        case serverTimeout                      = "Server timed out"
+        case invalidJson                        = "Invalid response."
+        case noDataFromServer                   = "No data found"
+        case noInternetConnection               = "Please make sure to connect with internet."
     }
     
 }
 
-struct ALERT_ACTION {
-    static var OK                               : String{return "OK"}
-    static var CANCEL                           : String{return "Cancel"}
-    static var SETTINGS                         : String{return "Settings"}
+struct Alert_Action {
+    static let ok                               = "OK"
+    static let cancel                           = "Cancel"
+    static let settings                         = "Settings"
 }
 
-struct NOTIFICATION_OBSERVER_CONSTANTS
+struct Notification_Observer_Constants
 {
-    static let N_O_C_ALERT_DISMISS              = "DismissAllAlertsNotification"
-
+    static let alertDismiss                     = "DismissAllAlertsNotification"
 }
+
+struct Emoji_Common_Constants {
+    // Size properties
+    static let emojiSmallSize_Cell              = 80
+    static let emojiBigSize_Details             = 160
+    static let cornerRadius                     = 5.0
+    static let borderWidth                      = 1.0
+    
+    // Constant properties
+    static let emptyCategoryPlaceholder         = "Category : "
+    static let emptyGroupPlaceholder            = "Group : "
+    static let emptyNA_Placeholder              = "N/A"
+    static let emojiLogNoData                   = "No data"
+}
+
 
 

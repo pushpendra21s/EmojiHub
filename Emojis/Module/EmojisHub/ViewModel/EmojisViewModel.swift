@@ -16,18 +16,18 @@ class EmojisViewModel: ResponseHandler {
     var handleError: (()->())?
     var apiError : String?
     var updateAPI_LoadingStatus: (()->())?
-    let emojiApiService: EmojiServiceProtocol
-
+    private let emojiApiService: EmojiServiceProtocol
+    
     var isLoading: Bool = false {
         didSet {
             self.updateAPI_LoadingStatus?()
         }
     }
-
+    
     init(apiService: EmojiServiceProtocol = EmojiServiceProvider() ) {
         self.emojiApiService = apiService
     }
-
+    
     func fetchAllEmojiData() {
         self.isLoading = true
         self.emojiApiService.fetchAllEmojis(allEmojiEndPoint: EMOJI_ENDPOINT.All_EMOJIS) { [weak self] (emojis, errorString) in
@@ -37,7 +37,7 @@ class EmojisViewModel: ResponseHandler {
                 self?.handleError?()
             } else {
                 self?.allEmojisDataModel = emojis
-                self?.prepareAndReverseBind_CellViewModel()
+                self?.bindCellViewModelData()
             }
         }
     }
@@ -51,26 +51,26 @@ class EmojisViewModel: ResponseHandler {
                 self?.handleError?()
             } else {
                 self?.randomEmojiDataModel = emoji
-                self?.prepareAndReverseBind_CellViewModelForRandomEmoji()
+                self?.bindCellViewModelDataForRandomEmoji()
             }
         }
     }
-
+    
     
     // MARK:- Cell ViewModel Data source
-    func prepareAndReverseBind_CellViewModel() {
+    func bindCellViewModelData() {
         self.emojis.value = self.allEmojisDataModel?.compactMap({
             EmojisCellViewModel(name: $0.name, category: $0.category, group: $0.group, htmlCode: $0.htmlCode.first ?? "", uniCode: $0.unicode.first ?? "")
         })
     }
     
-    func prepareAndReverseBind_CellViewModelForRandomEmoji() {
+    func bindCellViewModelDataForRandomEmoji() {
         if let emoji = self.randomEmojiDataModel {
             self.randomEmoji.value = [EmojisCellViewModel(name: emoji.name, category: emoji.category, group: emoji.group, htmlCode: emoji.htmlCode.first ?? "", uniCode: emoji.unicode.first ?? "")]
         }
     }
     
-    func getEmojiCellViewModel(forSelectedRow row: Int) -> EmojisCellViewModel? {
+    func getEmojiDataSource(forSelectedRow row: Int) -> EmojisCellViewModel? {
         return self.emojis.value?[row]
     }
     
@@ -84,10 +84,11 @@ class EmojisViewModel: ResponseHandler {
 // MARK:-
 
 /**
-        View model for Emoji List cell view.
+ View model for Emoji List cell view.
  
-    UI will only understand the EmojisCellViewModel in order to render the data in it. If any data is to be passed then those models have to converted back to EmojisCellViewModel.
+ UI will only understand the EmojisCellViewModel in order to render the data in tableView cell. If any data is to be passed then those models have to converted back to EmojisCellViewModel.
  */
+
 
 struct EmojisCellViewModel {
     let name: String
@@ -97,10 +98,10 @@ struct EmojisCellViewModel {
     let uniCode: String
     
     func getCategoryDescription() -> String {
-        return "Category : \(self.category.count > 0 ? self.category : "N/A")"
+        return "\(Emoji_Common_Constants.emptyCategoryPlaceholder)\(self.category.count > 0 ? self.category : Emoji_Common_Constants.emptyNA_Placeholder)"
     }
     
     func getGroupDescription() -> String {
-        return "Group : \(self.group.count > 0 ? self.group : "N/A")"
+        return "\(Emoji_Common_Constants.emptyGroupPlaceholder)\(self.group.count > 0 ? self.group : Emoji_Common_Constants.emptyGroupPlaceholder)"
     }
 }

@@ -9,21 +9,21 @@ import UIKit
 
 @IBDesignable
 class CustomButton: UIButton {
-
+    
     var buttonStyle : ButtonStyle
     
     public enum ButtonStyle: Int {
-        case Primary            = 0
-        case Secondary          = 1
+        case primary
+        case secondary
     }
     
     override init(frame: CGRect) {
-        self.buttonStyle = .Primary
+        self.buttonStyle = .primary
         super.init(frame: frame)
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        self.buttonStyle = .Primary
+        self.buttonStyle = .primary
         super.init(coder: aDecoder)
         
     }
@@ -35,22 +35,22 @@ class CustomButton: UIButton {
             
             self.buttonStyle = CustomButton.ButtonStyle(rawValue: customButtonStyle)!
             self.setImage(nil, for: .normal)
-
+            
             switch self.buttonStyle {
-            case .Primary:
-                self.backgroundColor = THEME_BUTTON.BACKGROUND_PRIMARY_COLOR
-                self.setTitleColor(THEME_BUTTON.TITLE_COLOR_PRIMARY, for: .normal)
+            case .primary:
+                self.backgroundColor = Theme_Button.primaryColor
+                self.setTitleColor(Theme_Button.primaryTitleColor, for: .normal)
                 break
                 
-            case .Secondary:
-                self.backgroundColor = THEME_BUTTON.BACKGROUND_SECONDARY_COLOR
-                self.setTitleColor(THEME_BUTTON.TITLE_COLOR_SECONDARY, for: .normal)
-                self.layer.borderColor = THEME_BUTTON.TITLE_COLOR_SECONDARY.cgColor
-                self.layer.borderWidth = 1.0
+            case .secondary:
+                self.backgroundColor = Theme_Button.secondaryColor
+                self.setTitleColor(Theme_Button.secondaryTitleColor, for: .normal)
+                self.layer.borderColor = Theme_Button.secondaryTitleColor.cgColor
+                self.layer.borderWidth = CGFloat(Theme_Button.borderWidth)
                 break
-
+                
             }
-            self.layer.cornerRadius = THEME_BUTTON.CORNER_RADIUS
+            self.layer.cornerRadius = CGFloat(Theme_Button.cornerRadius)
         }
     }
 }

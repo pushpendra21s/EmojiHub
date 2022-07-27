@@ -8,11 +8,10 @@
 import UIKit
 
 class EmojiListViewController: UIViewController {
-
-    var emojisHubModel: EmojiHub?
-    @IBOutlet weak var indicatorView: CustomIndicator!
+    
     var viewModel : EmojisViewModel! // Inject view model instead of initializing
-    @IBOutlet weak var tblViewEmojis: UITableView!
+    @IBOutlet private weak var tblViewEmojis: UITableView!
+    @IBOutlet private weak var indicatorView: CustomIndicator!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,13 +47,13 @@ class EmojiListViewController: UIViewController {
     func fetchListOfAllEmojis() {
         viewModel.fetchAllEmojiData()
     }
-
+    
     func handleAPI_Error() {
-        let alert = AlertUtility.alertCon(withTite:ALERT_MESSAGES.TITLE.ERROR_NO_RECORDS.rawValue, withMessage: self.viewModel.apiError, preferredStyle:  UIAlertController.Style.alert.rawValue)
-        alert.addAction(UIAlertAction(title: ALERT_ACTION.OK, style: UIAlertAction.Style.cancel, handler: { action in
+        let alert = AlertUtility.alertCon(withTite:Alert_Messages.Title.errorNoRecords.rawValue, withMessage: self.viewModel.apiError, preferredStyle:  UIAlertController.Style.alert.rawValue)
+        alert.addAction(UIAlertAction(title: Alert_Action.ok, style: UIAlertAction.Style.cancel, handler: { action in
             self.navigationController?.popViewController(animated: true)
         }))
-
+        
         DispatchQueue.main.async() {
             self.present(alert, animated: true, completion: nil)
         }
@@ -63,12 +62,13 @@ class EmojiListViewController: UIViewController {
     private func navigateToEmojiDetails(forDataModel dataModel: EmojisCellViewModel) {
         
         if let vc_EmojiDetails = EmojiUtility.mainStoryboard().instantiateViewController(withIdentifier: "EmojiDetailViewController") as? EmojiDetailViewController {
+            vc_EmojiDetails.viewModel = self.viewModel
             vc_EmojiDetails.displayCurrentMood = false
             vc_EmojiDetails.emojiCellViewModel = dataModel
             self.navigationController?.pushViewController(vc_EmojiDetails, animated: true)
         }
     }
-
+    
     
 }
 
@@ -76,7 +76,7 @@ class EmojiListViewController: UIViewController {
 // MARK: -
 extension EmojiListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let model = viewModel.getEmojiCellViewModel(forSelectedRow: indexPath.row) {
+        if let model = viewModel.getEmojiDataSource(forSelectedRow: indexPath.row) {
             // Navigate to the details page
             navigateToEmojiDetails(forDataModel: model)
         }
@@ -98,12 +98,12 @@ extension EmojiListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let model = viewModel.getEmojiCellViewModel(forSelectedRow: indexPath.row) {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "CustomEmojiCell") as? CustomEmojiCell {
-                cell.updateCellValues(withInputModel: model)
-                return cell
-            }
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell") as? EmojiCell, let model = viewModel.getEmojiDataSource(forSelectedRow: indexPath.row) else {
+            return UITableViewCell()
         }
-        return UITableViewCell()
+
+        cell.updateCellValues(withInputModel: model)
+        return cell
     }
 }

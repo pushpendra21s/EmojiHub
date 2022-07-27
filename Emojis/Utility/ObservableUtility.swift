@@ -8,9 +8,9 @@
 import Foundation
 
 /**
-        Generic class to observe the property changes
+ Generic class to observe the property changes
  
-    This class is a Generic Listner class which is used to observe the change in value.
+ This class is a Generic Listner class which is used to observe the change in value.
  */
 
 class DataObservable<T> {

@@ -165,5 +165,66 @@ class EmojiViewModelTests: XCTestCase {
         XCTAssertEqual(sut?.apiError, errorMsg, "Invalid json is not handled")
     }
 
+    func test_NumberOfRows_FromCellViewModel_With_MockEmojiData() {
+        // Given
+        mockApiProvided?.givenSuccessEmojiList()
+
+        // When
+        sut?.fetchAllEmojiData()
+        mockApiProvided?.completeEmojiList_Closure()
+        let rowCount = sut?.numberOfRows_EmojiList()
+
+        
+        // Assert
+        XCTAssertNotNil(sut?.emojis, "Mock Emojis data is nil")
+        XCTAssertNil(sut?.apiError, "Mock Emojis error is not nil")
+        XCTAssertEqual(sut?.allEmojisDataModel?.count, rowCount, "Number of rows not tested.")
+    }
+
+    func test_GetDataSource_FromViewModel_With_MockEmojiData() {
+        // Given
+        mockApiProvided?.givenSuccessEmojiList()
+
+        // When
+        sut?.fetchAllEmojiData()
+        mockApiProvided?.completeEmojiList_Closure()
+        if let emojiDetail = sut?.getEmojiDataSource(forSelectedRow: 0), let emojiDetailFromSUT = sut?.emojis.value?.first {
+            // Assert
+            XCTAssertEqual(emojiDetail.name, emojiDetailFromSUT.name, "Mock input was not able to create cell view model correctly.")
+        } else {
+            XCTAssert(true, "Mock input was not able to create cell view model correctly.")
+        }
+    }
+    
+    func test_GetDataSource_FromViewModel_With_MockEmojiCategory() {
+        // Given
+        mockApiProvided?.givenSuccessEmojiList()
+
+        // When
+        sut?.fetchAllEmojiData()
+        mockApiProvided?.completeEmojiList_Closure()
+        if let emojiDetail = sut?.getEmojiDataSource(forSelectedRow: 0), let emojiDetailFromSUT = sut?.emojis.value?.first {
+            // Assert
+            XCTAssertEqual(emojiDetail.getCategoryDescription(), emojiDetailFromSUT.getCategoryDescription(), "Mock input was not able to create cell view model correctly.")
+        } else {
+            XCTAssert(true, "Mock input was not able to create cell view model correctly.")
+        }
+    }
+
+    func test_GetDataSource_FromViewModel_With_MockEmojiGroup() {
+        // Given
+        mockApiProvided?.givenSuccessEmojiList()
+
+        // When
+        sut?.fetchAllEmojiData()
+        mockApiProvided?.completeEmojiList_Closure()
+        if let emojiDetail = sut?.getEmojiDataSource(forSelectedRow: 0), let emojiDetailFromSUT = sut?.emojis.value?.first {
+            // Assert
+            XCTAssertEqual(emojiDetail.getGroupDescription(), emojiDetailFromSUT.getGroupDescription(), "Mock input was not able to create cell view model correctly.")
+        } else {
+            XCTAssert(true, "Mock input was not able to create cell view model correctly.")
+        }
+    }
+
 }
 
