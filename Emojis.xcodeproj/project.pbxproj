@@ -13,7 +13,6 @@
 		A317716628799BCB00EE8020 /* EmojiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317716528799BCB00EE8020 /* EmojiListViewController.swift */; };
 		A317716B28799BF400EE8020 /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317716A28799BF400EE8020 /* EmojiDetailViewController.swift */; };
 		A31771872879B72400EE8020 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771862879B72400EE8020 /* CustomButton.swift */; };
-		A317718F287ACF9C00EE8020 /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317718E287ACF9C00EE8020 /* AlertUtility.swift */; };
 		A31771A2287EAE3700EE8020 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771A1287EAE3700EE8020 /* CustomIndicator.swift */; };
 		A31771A82880120300EE8020 /* EmojiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771A72880120200EE8020 /* EmojiService.swift */; };
 		A31771B72880299C00EE8020 /* EmojiAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771B62880299C00EE8020 /* EmojiAPIServiceTests.swift */; };
@@ -64,7 +63,6 @@
 		A317716528799BCB00EE8020 /* EmojiListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListViewController.swift; sourceTree = "<group>"; };
 		A317716A28799BF400EE8020 /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
 		A31771862879B72400EE8020 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		A317718E287ACF9C00EE8020 /* AlertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
 		A31771A1287EAE3700EE8020 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
 		A31771A72880120200EE8020 /* EmojiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiService.swift; sourceTree = "<group>"; };
 		A31771B62880299C00EE8020 /* EmojiAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiAPIServiceTests.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 				A31771562875CDEC00EE8020 /* ThemeConstants.swift */,
 				A317715B28796AC800EE8020 /* EmojiUtility.swift */,
 				A31771862879B72400EE8020 /* CustomButton.swift */,
-				A317718E287ACF9C00EE8020 /* AlertUtility.swift */,
 				A31771A1287EAE3700EE8020 /* CustomIndicator.swift */,
 			);
 			path = Utility;
@@ -450,7 +447,6 @@
 				A571AAEC282F8FFD00E9962B /* ObservableUtility.swift in Sources */,
 				A31771A82880120300EE8020 /* EmojiService.swift in Sources */,
 				A58F3870282CB1D100A3C497 /* SceneDelegate.swift in Sources */,
-				A317718F287ACF9C00EE8020 /* AlertUtility.swift in Sources */,
 				A571AAFC282FE3B600E9962B /* APIRequest.swift in Sources */,
 				A58F38BE282CB47300A3C497 /* EmojisViewModel.swift in Sources */,
 				A31771572875CDEC00EE8020 /* ThemeConstants.swift in Sources */,
