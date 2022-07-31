@@ -38,11 +38,6 @@ struct Alert_Action {
     static let settings                         = "Settings"
 }
 
-struct Notification_Observer_Constants
-{
-    static let alertDismiss                     = "DismissAllAlertsNotification"
-}
-
 struct Emoji_Common_Constants {
     // Size properties
     static let emojiSmallSize_Cell              = 80

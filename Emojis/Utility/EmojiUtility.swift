@@ -25,54 +25,6 @@ class EmojiUtility: NSObject {
         print(logValue ?? Emoji_Common_Constants.emojiLogNoData)
         #endif
     }
-    
-    //MARK:- Common methods
-    //MARK:-
-    class func hideNoInternetAlertIfPresented() {
-        if noInternetAlert.isBeingPresented {
-            noInternetAlert.dismiss(animated: false, completion: {
-            })
-        }
-    }
-    
-    class func showNoInternetAlert() {
-        let strTitle = Alert_Messages.Title.errorNoInternet.rawValue
-        let strDesc = Alert_Messages.String_Values.noInternetConnection.rawValue
-        
-        let cancelButton = Alert_Action.ok
-        let settingsButton = Alert_Action.settings
-        
-        EmojiUtility.hideNoInternetAlertIfPresented()
-        
-        noInternetAlert = AlertUtility.alertCon(withTite:strTitle, withMessage: strDesc, preferredStyle:  UIAlertController.Style.alert.rawValue)
-        noInternetAlert.addAction(UIAlertAction(title: cancelButton, style: UIAlertAction.Style.cancel, handler: { action in
-            
-        }))
-        
-        let somethingAction = UIAlertAction(title: settingsButton, style: UIAlertAction.Style.default, handler: { action in
-            noInternetAlert.dismiss(animated: true, completion: nil)
-            EmojiUtility.openSettingOption()
-            
-        })
-        noInternetAlert.addAction(somethingAction)
-        noInternetAlert.preferredAction = somethingAction
-        
-        DispatchQueue.main.async() {
-            UIApplication.shared.delegate?.window!?.rootViewController?.present(noInternetAlert, animated: true, completion: nil)
-        }
-        
-        return
-        
-    }
-    
-    class func openSettingOption()
-    {
-        if let url = URL(string:UIApplication.openSettingsURLString) {
-            if UIApplication.shared.canOpenURL(url) {
-                let _ =  UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
-        }
-    }
 }
 
 

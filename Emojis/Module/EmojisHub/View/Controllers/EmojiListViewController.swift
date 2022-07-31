@@ -49,7 +49,8 @@ class EmojiListViewController: UIViewController {
     }
     
     func handleAPI_Error() {
-        let alert = AlertUtility.alertCon(withTite:Alert_Messages.Title.errorNoRecords.rawValue, withMessage: self.viewModel.apiError, preferredStyle:  UIAlertController.Style.alert.rawValue)
+        let alert = UIAlertController(title: Alert_Messages.Title.errorNoRecords.rawValue, message: self.viewModel.apiError, preferredStyle: .alert)
+
         alert.addAction(UIAlertAction(title: Alert_Action.ok, style: UIAlertAction.Style.cancel, handler: { action in
             self.navigationController?.popViewController(animated: true)
         }))
