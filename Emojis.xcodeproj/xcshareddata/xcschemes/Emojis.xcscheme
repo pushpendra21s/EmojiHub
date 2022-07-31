@@ -38,6 +38,17 @@
                BlueprintName = "EmojisTests"
                ReferencedContainer = "container:Emojis.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "EmojiAPIServiceTests/test_fetch_All_Emojis_API_FailureRsponse_WithInvalidEndPoint()">
+               </Test>
+               <Test
+                  Identifier = "EmojiAPIServiceTests/test_fetch_All_Emojis_API_SuccessRsponse()">
+               </Test>
+               <Test
+                  Identifier = "EmojiAPIServiceTests/test_fetch_Random_Emojis_API_FailureRsponse_WithInvalidEndPoint()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">

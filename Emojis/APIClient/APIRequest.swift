@@ -33,7 +33,7 @@ extension ResponseHandler{
     func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String>{
         switch response.statusCode {
         case 200: return .success
-        case 500: return .failure(ErrorResponse(rawValue: ErrorResponse.internalServerError.rawValue)!)
+        case 500...599: return .failure(ErrorResponse(rawValue: ErrorResponse.internalServerError.rawValue)!)
         default: return .failure(ErrorResponse(rawValue: ErrorResponse.unknownError.rawValue)!)
         }
     }

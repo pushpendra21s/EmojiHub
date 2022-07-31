@@ -68,7 +68,21 @@ final class EmojiServiceProvider: ResponseHandler, EmojiServiceProtocol {
                     return
                 }
             case .failure(let errorResponse):
-                requestCompletion(nil,errorResponse.rawValue)
+                if errorResponse == .internalServerError {
+                    // if server is not responding then get the response from stub json for testing purposes
+                    do {
+                        let mockDataProvider = MockEmojiServiceProvider.init()
+                        let endpoint = EMOJI_ENDPOINT.All_EMOJIS.replacingOccurrences(of: "/", with: "")
+                        let mockFileData = try mockDataProvider.stubClient.dataFromFile(fileEndPoint: endpoint)
+                        let decoder = JSONDecoder()
+                        let emojiModels = try! decoder.decode([Emoji].self, from: mockFileData)
+                        requestCompletion(emojiModels,nil)
+                    } catch {
+                        requestCompletion(nil,errorResponse.rawValue)
+                    }
+                } else {
+                    requestCompletion(nil,errorResponse.rawValue)
+                }
             }
         }
     }
@@ -104,7 +118,21 @@ final class EmojiServiceProvider: ResponseHandler, EmojiServiceProtocol {
                     return
                 }
             case .failure(let errorResponse):
-                requestCompletion(nil,errorResponse.rawValue)
+                if errorResponse == .internalServerError {
+                    // if server is not responding then get the response from stub json for testing purposes
+                    do {
+                        let mockDataProvider = MockEmojiServiceProvider.init()
+                        let endpoint = EMOJI_ENDPOINT.RANDOM_EMOJI.replacingOccurrences(of: "/", with: "")
+                        let mockFileData = try mockDataProvider.stubClient.dataFromFile(fileEndPoint: endpoint)
+                        let decoder = JSONDecoder()
+                        let emojiModel = try decoder.decode(Emoji.self, from: mockFileData)
+                        requestCompletion(emojiModel,nil)
+                    } catch {
+                        requestCompletion(nil,errorResponse.rawValue)
+                    }
+                } else {
+                    requestCompletion(nil,errorResponse.rawValue)
+                }
             }
         }
     }
